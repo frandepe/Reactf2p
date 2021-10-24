@@ -1,0 +1,129 @@
+:root {
+    --primario: #8338ec;
+    --secundario: #3a86ff;
+    --terciario: #ff006e;
+    --cuarto: #fb5607;
+    --quinto: #ffbe0b;
+}
+
+.cont-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.flex-form{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+}
+
+.flex-form h2{
+    padding: 5%;
+}
+
+.input-i-cont{
+    display: flex;
+    padding: 5%;
+}
+
+.input-i-cont input{
+    background: transparent;
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+
+}
+
+.input-i-cont input::placeholder{
+    color: black;
+}
+
+.input-i-cont input:focus {
+    outline: none;
+  }
+
+.input-i-cont i{
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-log{
+    padding: 5%;
+    margin: 5%;
+    background-color: var(--primario);
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 100ms;
+    border: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btn-log:hover{
+    transition: all 100ms;
+    background-color: #9346ff;
+    
+}
+
+.btn-face{
+    padding: 5%;
+    margin: 5%;
+    color: var(--primario);
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 100ms;
+    border: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btn-face:hover{
+    transition: all 100ms;
+    color: #9346ff;
+    
+}
+
+.signup-cont{
+    margin-top: 5%;
+}
+.signup-cont a{
+    margin-left: 5px;
+}

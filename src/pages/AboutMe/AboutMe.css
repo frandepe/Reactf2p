@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  :root {
+    --primario: #8338ec;
+    --secundario: #3a86ff;
+    --terciario: #ff006e;
+    --cuarto: #fb5607;
+    --quinto: #ffbe0b;
+}
+
+.about-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 15% 0 15%;
+    
+}
+
+.about-contain a{
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    font-size: 1em;
+    color: rgb(172, 203, 243);
+}
+
+.about-grid{
+    margin-right: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.about-img img{
+    width: 300px;
+    height: auto;
+    filter: sepia(54%) hue-rotate(300deg);
+-webkit-filter: sepia(54%) hue-rotate(300deg);
+-moz-filter: sepia(54%) hue-rotate(300deg);
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+border-radius: 20px;
+
+
+transform:
+    perspective(800px)
+    rotateY(-8deg);
+  transition: transform 1s ease 0s;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+
+}
+
+.about-img img:hover {
+    transform: perspective(800px) rotateY(-4deg);
+  }
+
+.flag-flex{
+    display: flex;
+}
+
+.about-flags img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.about-flags p{
+    margin-top: 5px;
+}
+
+.about-flags{
+    padding: 20px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    margin-top: -2%;
+    margin-left: 15%;
+    width: 20%;
+    height: 35%;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transform:
+    perspective(800px)
+    rotateY(-8deg);
+    transition: transform 1s ease 0s;
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+
+}
+
+.about-flags:hover {
+    transform: perspective(800px) rotateY(-4deg);
+  }
+
+.redes i{
+    font-size: 1.4em;
+}
+
+.redes td{
+    padding: 20px;
+}
