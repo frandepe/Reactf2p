@@ -9,35 +9,9 @@ import Loading from '../../components/Loading/Loading'
 
 
 
+
 const FetchApi = () => {
 
-    // const baseURL = 'https://free-to-play-games-database.p.rapidapi.com/api/games'
-    // const apiKEY = '613bf31ec2msh4ed6a45557593bfp1229a9jsn46464364d020'
-    {/* <ButtonCategory miFuncion={() => callApi('mmorpg')} text='Mmorpg'/>
-            <ButtonCategory miFuncion={() => callApi('shooter')} text='Shooter'/> */}
-
-            {/* <button type="button" onClick={() => callApi('shooter')}>Shooters</button>
-            <button type="button" onClick={() => callApi('mmorpg')}>Mmorpg</button> */}
-            
-            {/* <SelectGames value={elegir} onChange={handleChange}/> */}
-
-            {/* <input type='text' value={search} onChange={handleInput}/> */}
-
-            {/* <div className='container-g'>
-                {games.map( (g) => <CardGames key={g.id} {...g} /> )}
-            </div> */}
-
-            {/* <div className='container-g'>
-                {show? games.map( (g) => <CardGames key={g.id} {...g} /> ): null}
-            </div> */}
-
-    // const handleChangeGame = (e) => {
-    //     setElegir(e.target.value)
-    //     console.log(e.target.value);
-    //     console.log(elegir);
-    // }
-
-    // const [show, setShow] = useState(false)
     const [games, setGames] = useState([])
     const [elegir, setElegir] = useState('')
     const [search, setSearch] = useState('')
@@ -75,6 +49,8 @@ const FetchApi = () => {
 
     return (
         <div className='main-cont'>
+
+            
             
             <div className='cont-select-input'>
 

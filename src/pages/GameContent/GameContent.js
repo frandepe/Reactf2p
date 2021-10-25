@@ -2,7 +2,6 @@ import './GameContent.css'
 import { instance } from '../../axios/axios'
 import { useParams } from 'react-router'
 import { useState, useEffect } from 'react'
-// import { Link } from 'react-router-dom'
 
 const GameContent = () => {
 
@@ -85,9 +84,7 @@ const GameContent = () => {
                 <p>{gameCard.genre}</p>
                 <h3>GRATUITO</h3>
                 <div className='card-btn'>
-                    {/* freetogame_profile_url */}
-                    {/* <Link className='link-btn' to={gameCard.freetogame_profile_url}>Jugar</Link> */}
-                    {gameCard.freetogame_profile_url ? <a href={gameCard.freetogame_profile_url}>Jugar</a> : <p style={{color: 'red', fontWeight:'bolder'}}>No disponible</p>}
+                    {gameCard.freetogame_profile_url ? <a href={gameCard.freetogame_profile_url}>Jugar</a> : <p style={{color: 'red', fontWeight:'bolder'}}>Juego no disponible</p>}
                 </div>
             </div>
 

@@ -99,3 +99,19 @@
     background-size: 100%;
   }
   
+  .signoff{
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primario);
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+    cursor: pointer;
+    width: 100px;
+    transition: all 100ms;
+  }
+
+  .signoff:hover{
+    transition: all 100ms;
+    background-color: #9346ff;
+  }
