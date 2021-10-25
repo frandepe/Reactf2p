@@ -25,7 +25,7 @@ const Register = (props) => {
             console.log('usuario creado', usuarioFirebase);
             props.setUsuario(usuarioFirebase)
         }).catch((error) => {
-            setErrores('Failed to log in')
+            setErrores('Failed to create an account')
             alert(error)
         })
     }
@@ -35,7 +35,7 @@ const Register = (props) => {
             console.log('sesion iniciada con:', usuarioFirebase.user);
             props.setUsuario(usuarioFirebase)
         }).catch((error) => {
-            setErrores('Failed to create an account')
+            setErrores('Failed to log in')
             alert(error)
         })
     }

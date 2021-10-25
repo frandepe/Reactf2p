@@ -32,7 +32,7 @@ const FetchApi = () => {
     }
     
     useEffect(() => {  
-            callApi('pvp');
+            callApi('action');
     }, [])
 
     const handleChange = (e) => {
