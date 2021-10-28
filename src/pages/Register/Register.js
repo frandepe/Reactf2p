@@ -25,8 +25,7 @@ const Register = (props) => {
             console.log('usuario creado', usuarioFirebase);
             props.setUsuario(usuarioFirebase)
         }).catch((error) => {
-            setErrores('Failed to create an account')
-            alert(error)
+            setErrores(error.message)
         })
     }
 
@@ -35,8 +34,7 @@ const Register = (props) => {
             console.log('sesion iniciada con:', usuarioFirebase.user);
             props.setUsuario(usuarioFirebase)
         }).catch((error) => {
-            setErrores('Failed to log in')
-            alert(error)
+            setErrores(error.message)
         })
     }
 
@@ -76,13 +74,19 @@ const Register = (props) => {
                             <div>
                                 <input value={password} onChange={handlePassword} id='passwordFielf' type='password' placeholder='Password' />
                             </div>
+                            
                         </div>
-
-                        <p>{errores}</p>
+                    
 
                 <div className='btn-cont'>
+
+                    <div>
+                        <p className='errores-catch'>{errores}</p>
+                    </div>
                     
-                    <button type='submit' className='btn-log'>{isRegistrando ? 'Registrate' : 'Inicia sesion'}</button>
+                    <div>
+                        <button type='submit' className='btn-log'>{isRegistrando ? 'Sign Up' : 'Login'}</button>
+                    </div>
 
                     <div className='signup-cont'>
                         <p onClick={()=>setIsRegistrando(!isRegistrando)}>{isRegistrando ? 'Do you have an account yet? Login' : 'Do not have an account yet? Sign Up'}</p>

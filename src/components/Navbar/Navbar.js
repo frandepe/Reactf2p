@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <div className='nav-cont'>
                 <div>
-                    <i className="fas fa-gamepad"></i>
+                    <i onClick={onPlay} className="fas fa-gamepad"></i>
                 </div>
 
                 <div className='nav-contul'>
@@ -37,7 +37,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <button className='signoff' onClick={cerrarSesion}>Sign Off</button>
+                <button className='signoff' onClick={cerrarSesion}>Sign Out</button>
         </div>
     )
 }

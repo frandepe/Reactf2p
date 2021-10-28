@@ -44,20 +44,20 @@ const AboutMe = () => {
                 <table>
                     <tbody>
                         <tr>
-                            <td><h3>Portfolio</h3></td>
-                            <td><a href='https://frandepaulo.netlify.app/'><i class="fas fa-user-graduate"></i></a></td>
+                            <td><h3>Portfolio <span style={{color:'#373737'}}>{'>>'}</span></h3></td>
+                            <td><a href='https://frandepaulo.netlify.app/'><i className="fas fa-user-graduate"></i></a></td>
                         </tr>
                         <tr>
-                            <td><h3>GitHub</h3></td>
-                            <td><a href='https://github.com/frandepe'><i class="fab fa-github"></i></a></td>
+                            <td><h3>GitHub <span style={{color:'#373737'}}>{'>>'}</span></h3></td>
+                            <td><a href='https://github.com/frandepe'><i className="fab fa-github"></i></a></td>
                         </tr>
                         <tr>
-                            <td><h3>LinkedIn</h3></td>
-                            <td><a href='https://www.linkedin.com/in/franco-de-paulo-13509b186/'><i class="fab fa-linkedin"></i></a></td>
+                            <td><h3>LinkedIn <span style={{color:'#373737'}}>{'>>'}</span></h3></td>
+                            <td><a href='https://www.linkedin.com/in/franco-de-paulo-13509b186/'><i className="fab fa-linkedin"></i></a></td>
                         </tr>
                         <tr style={{marginTop:'10px'}}>
-                            <td><h3>Free-To-Play <span style={{color:'rgb(37, 37, 37)'}}>(Thanks for the API)</span></h3></td>
-                            <td><a href='https://www.freetogame.com/api-doc/?ref=devresourc.es'><i class="fas fa-dice"></i></a></td>
+                            <td><h3>Free-To-Play <span style={{color:'#373737'}}>(Thanks for the API)</span></h3></td>
+                            <td><a href='https://www.freetogame.com/api-doc/?ref=devresourc.es'><i className="fas fa-dice"></i></a></td>
                         </tr>
                     </tbody>
                 </table>

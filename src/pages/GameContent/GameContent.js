@@ -77,37 +77,38 @@ const GameContent = () => {
             <div className='card-top'> 
                 {gameCard.screenshots ? <img src={gameCard.screenshots[0].image} alt='foto'></img> : ''}
             </div>
-            <div className='card-absolute'>
-                <h1>{gameCard.title}</h1>
-                <p>{gameCard.short_description}</p>
-                <p style={{color: '#3a86ff', fontWeight:'bolder',textShadow: '1px 1px 2px rgba(0,0,0,0.6)'}}>{gameCard.status}</p>
-                <p>{gameCard.genre}</p>
-                <h3>GRATUITO</h3>
-                <div className='card-btn'>
-                    {gameCard.freetogame_profile_url ? <a href={gameCard.freetogame_profile_url}>Jugar</a> : <p style={{color: 'red', fontWeight:'bolder'}}>Juego no disponible</p>}
-                </div>
-            </div>
-
+            
             <footer className='footer-cont'>
+
+                <div className='card-absolute'>
+                    <h1>{gameCard.title}</h1>
+                    <p>{gameCard.short_description}</p>
+                    <p style={{color: '#3a86ff', fontWeight:'bolder',textShadow: '1px 1px 2px rgba(0,0,0,0.6)'}}>{gameCard.status}</p>
+                    <p>{gameCard.genre}</p>
+                    <h3>FREE</h3>
+                    <div className='card-btn'>
+                        {gameCard.freetogame_profile_url ? <a href={gameCard.freetogame_profile_url}>Play</a> : <p style={{color: 'red', fontWeight:'bolder'}}>Game not available</p>}
+                    </div>
+                </div>
                 
                 <div  className='footer-table'>
                     <div className='data-extra-footer'>
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><h3>Editora</h3></td>
+                                    <td><h3>Publisher</h3></td>
                                     <td>{gameCard.publisher}</td>
                                 </tr>
                                 <tr>
-                                    <td><h3>Desarrolladora</h3></td>
+                                    <td><h3>Developer</h3></td>
                                     <td>{gameCard.developer}</td>
                                 </tr>
                                 <tr>
-                                    <td><h3>Fecha de lanzamiento</h3></td>
+                                    <td><h3>Release date</h3></td>
                                     <td>{gameCard.release_date}</td>
                                 </tr>
                                 <tr>
-                                    <td><h3>Plataforma</h3></td>
+                                    <td><h3>Platform</h3></td>
                                     <td>{gameCard.platform}</td>
                                 </tr>
                             </tbody>
@@ -115,7 +116,7 @@ const GameContent = () => {
                     </div>
                 </div>
 
-                <h3 className='requisitos-h3'>Requisitos</h3>
+                <h3 className='requisitos-h3'>Requirements</h3>
 
                 <div className='requisitos'>
                     {gameCard.minimum_system_requirements ? 
@@ -123,7 +124,7 @@ const GameContent = () => {
                     <table> 
                         <tbody>
                             <tr>
-                                <td><strong>Sistema Operativo</strong></td>
+                                <td><strong>OS</strong></td>
                                 <td>{gameCard.minimum_system_requirements.os}</td>
                             </tr>
                             <tr>

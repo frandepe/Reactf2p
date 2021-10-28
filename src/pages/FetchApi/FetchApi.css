@@ -131,3 +131,12 @@
 -webkit-box-shadow: 0px -4px 67px 0px rgba(255,0,110,0.26);
 -moz-box-shadow: 0px -4px 67px 0px rgba(255,0,110,0.26);
 }
+
+@media (max-width: 375px){
+  .select-cont{
+    width: 100%;
+  }
+  .search-box{
+    margin-right: 25px;
+  }
+}
