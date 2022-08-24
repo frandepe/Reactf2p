@@ -7,9 +7,9 @@ const Navbar = () => {
 
     const history = useHistory();
 
-    const onLogin = () => {
-        history.push('/register');
-    }
+    // const onLogin = () => {
+    //     history.push('/register');
+    // }
 
     const aboutMe = () => {
         history.push('/aboutme');
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <ul className='nav-ul'>
                         <li><h3 onClick={onPlay}>Play</h3></li>
                         <li><h3 onClick={aboutMe}>About me</h3></li>
-                        <li><h3 onClick={onLogin}>Login</h3></li>
+                        {/* <li><h3 onClick={onLogin}>Login</h3></li> */}
                     </ul>
                 </div>
 

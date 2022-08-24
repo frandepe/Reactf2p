@@ -1,0 +1,23 @@
+.SliderOneGame__container {
+  width: 700px;
+  height: 400px;
+  color: white;
+}
+
+.SliderOneGame__images img {
+  width: 700px;
+  height: 400px;
+}
+
+@media (max-width: 375px) {
+  .SliderOneGame__container {
+    width: 280px;
+    height: 250px;
+    color: white;
+  }
+
+  .SliderOneGame__images img {
+    width: 280px;
+    height: 200px;
+  }
+}

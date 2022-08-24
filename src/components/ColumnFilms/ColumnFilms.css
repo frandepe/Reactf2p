@@ -1,0 +1,12 @@
+.ColumnFilms__container {
+  color: white;
+}
+
+.ColumnFilms__container h3 {
+  text-align: center;
+  border-bottom: 2px solid var(--quinto);
+}
+
+.ColumnFilms__container p {
+  border-bottom: 1px solid var(--quinto);
+}

@@ -1,13 +1,11 @@
-
-.img-card{
-    padding: 15px 0px;
-    cursor: pointer;
-    transition: all 100ms;
+.img-card {
+  cursor: pointer;
+  transition: all 100ms;
 }
 
-.img-card:hover{
-    transition: all 100ms;
-  transform: scale(1.1) ;
--webkit-transform: scale(1.1) ;
--moz-transform: scale(1.1) ;
+.img-card:hover {
+  transition: all 100ms;
+  filter: grayscale(15%) brightness(90%) contrast(81%);
+  -webkit-filter: grayscale(15%) brightness(90%) contrast(81%);
+  -moz-filter: grayscale(15%) brightness(90%) contrast(81%);
 }

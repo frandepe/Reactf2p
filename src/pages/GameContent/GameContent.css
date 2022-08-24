@@ -1,152 +1,140 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-  :root {
-    --primario: #8338ec;
-    --secundario: #3a86ff;
-    --terciario: #ff006e;
-    --cuarto: #fb5607;
-    --quinto: #ffbe0b;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* IMG TOP */
 
-.main-cont-game{
-    background: url(./../../imgs/mainFondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 10% 0 10%;
+.main-cont-game {
+  background: url(./../../imgs/mainFondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 10% 0 10%;
 }
 
-.card-top img{
-    width: 100%;
-    height: 100%;
+.card-top img {
+  width: 100%;
+  height: 100%;
 }
 
-.card-top{
-    background-image: url(./../../imgs/fondoCard.jpg);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-    color: white;
+.card-top {
+  background-image: url(./../../imgs/fondoCard.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  color: white;
 }
 
 /* CARD GAME */
 
-.card-absolute{
-    width: 50%;
-    font-size: 1.4em;
-    padding: 30px;
-    position: absolute;
-    margin-top: -120px;
-    margin-left: 30px;
-    background: rgba( 255, 255, 255, 0.2 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+.card-absolute {
+  width: 50%;
+  font-size: 1.4em;
+  padding: 30px;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.card-btn{
-    display: flex;
-    justify-content: center;
+.card-btn {
+  display: flex;
+  justify-content: center;
 }
 
-.card-btn a{
-    background-color: var(--primario);
-    padding: 5px;
-    font-size: 1em;
-    width: 30%;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 100ms;
-    border: none;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-weight: bolder;
+.card-btn a {
+  background-color: var(--primario);
+  padding: 5px;
+  font-size: 1em;
+  width: 30%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 100ms;
+  border: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
 }
 
-.card-btn a:hover{
-    transition: all 100ms;
-    transform: scale(1.05) ;
-    -webkit-transform: scale(1.05) ;
-    -moz-transform: scale(1.05) ;
-    background-color: #9346ff;
-    
+.card-btn a:hover {
+  transition: all 100ms;
+  background-color: #9346ff;
 }
 
 /* FOOTER */
 
-.footer-cont{
-    background-color: black;
+.footer-cont {
+  background-color: black;
 }
 
-.footer-table{
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid white;
-    margin: 0 40px 0 40px;
+.footer-table {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid white;
+  margin: 0 40px 0 40px;
 }
 
-.data-extra-footer table tr td h3{
-    color: rgba(247, 238, 238, 0.459);
-    margin-right: 50px;
+.data-extra-footer table tr td h3 {
+  color: rgba(247, 238, 238, 0.459);
+  margin-right: 50px;
 }
 
-.data-extra-footer table tr td{
-    padding: 20px;
+.data-extra-footer table tr td {
+  padding: 20px;
 }
 
-.description-game{
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-size: 1.2em;
+.description-game {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 1.2em;
 }
 
-.requisitos{
-    color: white;
-    display: flex;
-    justify-content: center;
+.requisitos {
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.description{
-    color: white;
-    text-align: center;
-    padding: 5%;
+.description {
+  color: white;
+  text-align: center;
+  padding: 5%;
 }
 
-.requisitos strong{
-    margin-right: 50px;
-    color: var(--quinto);
+.requisitos strong {
+  margin-right: 50px;
+  color: var(--quinto);
 }
 
-.requisitos table tr td{
-    padding: 20px;
+.requisitos table tr td {
+  padding: 20px;
 }
 
-.requisitos-h3{
-    color: white;
-    text-align: center;
-    margin: 5% 0 3% 0;
+.requisitos-h3 {
+  color: white;
+  text-align: center;
+  margin: 5% 0 3% 0;
 }
 
-@media (max-width: 375px){
-    .card-absolute{
-        position: relative;
-        width: 100%;
-        margin: 0;
-    }
-    .main-cont-game{
-        margin: 0;
-    }
+@media (max-width: 375px) {
+  .card-absolute {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  .main-cont-game {
+    margin: 0;
+  }
 }
